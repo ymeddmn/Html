@@ -1,0 +1,21 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var time
+        function showAlert() {
+            time = setTimeout("alert('提示框')",5000)//此处弹出框的方法别绪用引号括起来，不然会即时弹出弹出框
+
+        }
+
+        function clear() {
+            clearTimeout(time)
+        }
+    </script>
+</head>
+<body>
+    <h1 style="color: green;width:200px;height: 300px" onclick="showAlert()"> 点击后五秒出现提示框（写法好像不对，时钟即时弹出来）</h1>
+    <h1 style="color: green;width:200px;height: 100px" onclick="clear()"> 清除延时</h1>
+</body>
+</html>

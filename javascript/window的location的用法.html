@@ -1,0 +1,23 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+
+    </script>
+</head>
+<body>
+<div id="div" style="width: 200px;height: 200px;color: green" onclick="loadNewDoc()">点击加载新文档</div>
+<script>
+    document.write(location.hostname + "主机域名    ")
+    document.write(location.pathname + "当前页面路径    ")
+    document.write(location.port + "页面端口号    ")
+    document.write(location.protocol + "使用的返回协议    ")
+    document.write(location.href+"当前页面连接    ")
+
+    function loadNewDoc() {
+        location.assign("http://www.w3school.com.cn/js/js_window_location.asp")
+    }
+</script>
+</body>
+</html>

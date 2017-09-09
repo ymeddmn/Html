@@ -1,0 +1,24 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function checkInputChange() {
+            document.getElementById("change").innerText = document.getElementById("input").value
+        }
+        function mouseIn(html) {
+            html.innerHTML = "鼠标淡入"
+        }
+        function mouseOut(html) {
+            html.innerHTML = "鼠标淡出"
+        }
+    </script>
+</head>
+
+<body onload="checkCookie()">
+<h1 style="color: green" id="change">页面焦点发生改变文字跟随输入改变</h1>
+<input type="text" onchange="checkInputChange()" id="input">
+<h1 style="width: 200px;height: 200px;color: aqua" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)">
+    鼠标淡入淡出改变文字</h1>
+</body>
+</html>

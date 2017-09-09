@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>灯泡</title>
+    <script >
+        var index=0
+        function array() {
+            var arr = new Array(1,2,3,45,5,6,76)
+            document.getElementById('text').innerHTML=arr[index%arr.length]
+            index++
+        }
+    </script>
+</head>
+<body>
+    <h1 id="text" onclick="array()">哈哈</h1>
+
+</body>
+</html>

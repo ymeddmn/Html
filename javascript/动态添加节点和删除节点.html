@@ -1,0 +1,26 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+
+    </script>
+</head>
+
+<body onload="checkCookie()">
+    <div id="div"></div>
+    <div id="div2">
+        <h1 onclick="remove(this)" id="h1">点击移除我自己</h1>
+    </div>
+    <script>
+        node = document.createTextNode('脚本创建的节点')
+        p = document.createElement("p")
+        element = document.getElementById("div")
+        p.appendChild(node)
+        element.appendChild(p)
+        function remove(h1) {
+            document.getElementById("div2").removeChild(h1)
+        }
+    </script>
+</body>
+</html>

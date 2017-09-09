@@ -1,0 +1,19 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        cook = document.cookie;
+        if(!cook){
+            document.cookie="cookie"
+        }else {
+            alert(cook)
+            document.cookie=cook+1
+        }
+    </script>
+</head>
+<body>
+    <h1 style="color: green;width:200px;height: 300px" onclick="showAlert()"> 点击后五秒出现提示框（写法好像不对，时钟即时弹出来）</h1>
+    <h1 style="color: green;width:200px;height: 100px" onclick="clear()"> 清除延时</h1>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div id="div">window的使用</div>
+    <h1 onclick="window.close()">关闭</h1>
+    <h1 onclick="move()" >移动  不知道为啥没作用以后在研究</h1>
+    <h1 onclick="window.resizeTo(200,300)">调整尺寸   不知道为啥没作用以后在研究</h1>
+<script>
+    document.write(window.innerWidth + " 浏览器内部宽高" + window.innerHeight)
+    document.write(document.body.clientWidth + "浏览器的宽高" + document.body.clientHeight)
+    function move() {
+        window.moveBy(100,100)
+        this.focus()
+    }
+</script>
+
+body >
+< / html >

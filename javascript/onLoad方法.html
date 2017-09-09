@@ -1,0 +1,21 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body onload="checkCookie()">
+<h1 style="color: green">onload方法body标签加载的时候提示是否浏览器cookie已经启用</h1>
+<script>
+    function checkCookie() {
+        if (navigator.cookieEnabled) {
+            alert("cookie已启用")
+        } else {
+            alert("cookie未启用")
+        }
+    }
+</script>
+</body>
+
+</html>
